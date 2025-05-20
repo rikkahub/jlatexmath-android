@@ -12,17 +12,10 @@ import androidx.annotation.NonNull;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-import io.noties.debug.AndroidLogDebugOutput;
-import io.noties.debug.Debug;
 import ru.noties.jlatexmath.JLatexMathDrawable;
 import ru.noties.jlatexmath.JLatexMathView;
 
 public class MainActivity extends Activity {
-
-    static {
-        Debug.init(new AndroidLogDebugOutput(true));
-    }
-
     private final Map<String, String> map = new LinkedHashMap<String, String>() {{
         put("latex #1", LATEX_1);
         put("latex #2", LATEX_2);
