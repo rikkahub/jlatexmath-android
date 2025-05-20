@@ -84,6 +84,10 @@ public class JLatexMathDrawable extends Drawable {
         }
     }
 
+    public Drawable getBackground() {
+        return background;
+    }
+
     @Override
     public void draw(@NonNull Canvas canvas) {
 
