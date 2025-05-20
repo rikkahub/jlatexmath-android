@@ -1,5 +1,7 @@
 # JLatexMath Android
 
+> 为[RikkaHub](https://github.com/re-ovo/rikkahub) 维护的JLatexMath项目，清理过时代码
+
 This is a fork of [jlatextmath](https://github.com/opencollab/jlatexmath) project that brings rendering of LaTeX math to Android. Fork tries to keep as close as possible to the parent project by _mimicking_ `java.awt.*` package classes. 
 
 ## Installation
