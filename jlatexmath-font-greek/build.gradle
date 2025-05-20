@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.maven.publish)
 }
 
 android {
@@ -28,6 +29,15 @@ android {
     }
 }
 
-dependencies {
-
+publishing {
+    publications {
+        release(MavenPublication) {
+            groupId = 'me.rerere.jlatexmath'
+            artifactId = 'jlatexmath-font-greek'
+            version = '1.0'
+            afterEvaluate {
+                from components.release
+            }
+        }
+    }
 }
