@@ -37,7 +37,7 @@ public class MainActivity extends Activity {
         jLatexMathView = findViewById(R.id.j_latex_math_view);
 
         final String latex = "" +
-                "\\mathbf{小明 abc} 小明" +
+                "\\mathbf{小明 abc} 小明 \\Omega f(x)+4" +
                 "";
         display(latex);
     }

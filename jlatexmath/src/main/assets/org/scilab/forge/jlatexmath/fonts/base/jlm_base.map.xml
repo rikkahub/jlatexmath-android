@@ -150,7 +150,7 @@
   <SymbolMapping name="Upsilon" ch="168" fontId="jlm_cmr10"/>
   <SymbolMapping name="Phi" ch="169" fontId="jlm_cmr10"/>
   <SymbolMapping name="Psi" ch="170" fontId="jlm_cmr10"/>
-  <SymbolMapping name="Omega" ch="173" fontId="jlm_cmr10"/>
+  <SymbolMapping name="Omega" ch="198" fontId="jlm_cmr10"/>
   <SymbolMapping name="varGamma" ch="161" fontId="jlm_cmmi10"/>
   <SymbolMapping name="varDelta" ch="162" fontId="jlm_cmmi10"/>
   <SymbolMapping name="varTheta" ch="163" fontId="jlm_cmmi10"/>
