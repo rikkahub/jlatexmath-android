@@ -24,6 +24,7 @@ public class MainActivity extends Activity {
         put("latex #5", LATEX_5);
         put("latex #6", LATEX_6);
         put("latex #7", LATEX_7);
+        put("latex #8 (chem)", LATEX_8);
     }};
 
     private JLatexMathView jLatexMathView;
@@ -168,5 +169,18 @@ public class MainActivity extends Activity {
         latex += "\\mbox{прывітаньне Свет}&\\mbox{привіт світ}\\\\";
         latex += "\\end{array}";
         LATEX_7 = latex;
+    }
+
+    private static final String LATEX_8;
+
+    static {
+        String latex = "\\begin{array}{l}";
+        latex += "\\text{Chemical equations}\\\\";
+        latex += "\\mathrm{N_2 + 3H_2} \\rightleftharpoons \\mathrm{2NH_3}\\\\";
+        latex += "\\mathrm{CH_3COOH + H_2O} \\leftrightharpoons \\mathrm{CH_3COO^- + H_3O^+}\\\\";
+        latex += "\\overset{k_1}{\\underset{k_{-1}}{\\rightleftharpoons}}\\ \\mathrm{A + B}\\ \\rightarrow\\ \\mathrm{C}\\\\";
+        latex += "\\mathrm{CO_2 + H_2O}\\ \\leftrightarrow\\ \\mathrm{H_2CO_3}\\\\";
+        latex += "\\end{array}";
+        LATEX_8 = latex;
     }
 }

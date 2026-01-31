@@ -1,6 +1,6 @@
 <?xml version='1.0'?>
 <SymbolMappings>
-  <SymbolMapping name="rightleftharpoons" ch="173" fontId="jlm_msam10" />
+  <SymbolMapping name="rightleftharpoons" ch="208" fontId="jlm_msam10" />
   <SymbolMapping name="angle" ch="92" fontId="jlm_msam10" />
   <SymbolMapping name="hbar" ch="126" fontId="jlm_msbm10" />
   <SymbolMapping name="sqsubset" ch="64" fontId="jlm_msam10" />
