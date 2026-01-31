@@ -2,9 +2,9 @@
 
 本项目为[RikkaHub](https://github.com/re-ovo/rikkahub) 维护的JLatexMath项目，清理过时代码
 
-字体编辑器 https://kekee000.github.io/fonteditor/#
+字体编辑器 https://kekee000.github.io/fonteditor/# https://font.eelf.cn/#
 
-This is a fork of [jlatextmath](https://github.com/opencollab/jlatexmath) project that brings rendering of LaTeX math to Android. Fork tries to keep as close as possible to the parent project by _mimicking_ `java.awt.*` package classes. 
+This is a fork of [jlatextmath](https://github.com/opencollab/jlatexmath) project that brings rendering of LaTeX math to Android. Fork tries to keep as close as possible to the parent project by _mimicking_ `java.awt.*` package classes.
 
 ## Installation
 
@@ -49,7 +49,6 @@ final JLatexMathDrawable drawable = JLatexMathDrawable.builder(latex)
     app:jlmv_alignHorizontal="center"
     app:jlmv_textSize="16sp" />
 ```
-
 
 ## Licence
 GNU GENERAL PUBLIC LICENSE Version 2, June 1991
