@@ -17,4 +17,12 @@
         app:jlmv_alignVertical="center"
         app:jlmv_textSize="16sp" />
 
+    <Button
+        android:id="@+id/button_compose_demo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dip"
+        android:text="Compose Demo" />
+
 </FrameLayout>

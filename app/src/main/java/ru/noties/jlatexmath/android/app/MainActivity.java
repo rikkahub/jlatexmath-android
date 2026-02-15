@@ -1,11 +1,13 @@
 package ru.noties.jlatexmath.android.app;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 
 import androidx.annotation.NonNull;
 
@@ -36,6 +38,9 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         jLatexMathView = findViewById(R.id.j_latex_math_view);
+        final Button composeDemoButton = findViewById(R.id.button_compose_demo);
+        composeDemoButton.setOnClickListener(v ->
+                startActivity(new Intent(MainActivity.this, ComposeActivity.class)));
 
         final String latex = "" +
                 "\\mathbf{小明 abc} 小明 \\Omega f(x)+4" +
