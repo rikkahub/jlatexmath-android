@@ -27,6 +27,7 @@ public class MainActivity extends Activity {
         put("latex #6", LATEX_6);
         put("latex #7", LATEX_7);
         put("latex #8 (chem)", LATEX_8);
+        put("latex #9 (boxed)", LATEX_9);
     }};
 
     private JLatexMathView jLatexMathView;
@@ -187,5 +188,20 @@ public class MainActivity extends Activity {
         latex += "\\mathrm{CO_2 + H_2O}\\ \\leftrightarrow\\ \\mathrm{H_2CO_3}\\\\";
         latex += "\\end{array}";
         LATEX_8 = latex;
+    }
+
+    private static final String LATEX_9;
+
+    static {
+        String latex = "\\begin{array}{l}";
+        latex += "\\text{\\boxed examples}\\\\";
+        latex += "\\boxed{E = mc^2}\\\\";
+        latex += "\\boxed{\\int_0^\\infty e^{-x^2}\\,dx = \\frac{\\sqrt{\\pi}}{2}}\\\\";
+        latex += "\\boxed{\\sum_{n=0}^{\\infty} \\frac{x^n}{n!} = e^x}\\\\";
+        latex += "\\fbox{\\text{fbox with text}}\\quad\\doublebox{\\text{doublebox}}\\\\";
+        latex += "\\ovalbox{\\text{ovalbox}}\\quad\\shadowbox{\\text{shadowbox}}\\\\";
+        latex += "\\fcolorbox{red}{yellow}{\\text{fcolorbox}}\\\\";
+        latex += "\\end{array}";
+        LATEX_9 = latex;
     }
 }

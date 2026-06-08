@@ -132,6 +132,7 @@ public class AndroidGraphics2D implements Graphics2D {
             paint.setTypeface(font.typeface());
             paint.setTextSize(font.size());
         }
+        paint.setStyle(Paint.Style.FILL);
         canvas.drawText(chars, offset, length, x, y, paint);
     }
 
