@@ -28,6 +28,7 @@ public class MainActivity extends Activity {
         put("latex #7", LATEX_7);
         put("latex #8 (chem)", LATEX_8);
         put("latex #9 (boxed)", LATEX_9);
+        put("latex #10 (chem advanced)", LATEX_10);
     }};
 
     private JLatexMathView jLatexMathView;
@@ -182,10 +183,10 @@ public class MainActivity extends Activity {
     static {
         String latex = "\\begin{array}{l}";
         latex += "\\text{Chemical equations}\\\\";
-        latex += "\\mathrm{N_2 + 3H_2} \\rightleftharpoons \\mathrm{2NH_3}\\\\";
-        latex += "\\mathrm{CH_3COOH + H_2O} \\leftrightharpoons \\mathrm{CH_3COO^- + H_3O^+}\\\\";
-        latex += "\\overset{k_1}{\\underset{k_{-1}}{\\rightleftharpoons}}\\ \\mathrm{A + B}\\ \\rightarrow\\ \\mathrm{C}\\\\";
-        latex += "\\mathrm{CO_2 + H_2O}\\ \\leftrightarrow\\ \\mathrm{H_2CO_3}\\\\";
+        latex += "\\ce{N2 + 3H2 <=> 2NH3}\\\\";
+        latex += "\\ce{CH3COOH + H2O <-> CH3COO- + H3O+}\\\\";
+        latex += "\\ce{A + B ->[k_1][k_{-1}] C}\\\\";
+        latex += "\\ce{CO2 + H2O <-> H2CO3}\\\\";
         latex += "\\end{array}";
         LATEX_8 = latex;
     }
@@ -203,5 +204,25 @@ public class MainActivity extends Activity {
         latex += "\\fcolorbox{red}{yellow}{\\text{fcolorbox}}\\\\";
         latex += "\\end{array}";
         LATEX_9 = latex;
+    }
+
+    private static final String LATEX_10;
+
+    static {
+        String latex = "\\begin{array}{l}";
+        latex += "\\text{More mhchem examples}\\\\";
+        latex += "\\ce{2H2 + O2 -> 2H2O}\\\\";
+        latex += "\\ce{OH-(aq) + H+(aq) -> H2O(l)}\\\\";
+        latex += "\\ce{SO4^2- + Ba^2+ -> BaSO4(s)}\\\\";
+        latex += "\\ce{Fe(CN)6^3- + e- -> Fe(CN)6^4-}\\\\";
+        latex += "\\ce{Cr2O7^2- + 14H+ + 6e- -> 2Cr^3+ + 7H2O}\\\\";
+        latex += "\\ce{A ->[H2O][k_{-1}] B}\\\\";
+        latex += "\\ce{A <--> B} \\quad \\ce{A <=>> B} \\quad \\ce{A <<=> B}\\\\";
+        latex += "\\ce{(1/2)H2O + NaCl}\\\\";
+        latex += "\\ce{^{14}C + X_\\alpha -> Y}\\\\";
+        latex += "\\ce{A \\bond{1} B} \\quad \\ce{A \\bond{2} B} \\quad \\ce{A \\bond{3} B}\\\\";
+        latex += "\\ce{A...A} \\quad \\ce{nH2O} \\quad \\ce{\\ce{H2O}}\\\\";
+        latex += "\\end{array}";
+        LATEX_10 = latex;
     }
 }

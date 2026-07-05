@@ -118,6 +118,8 @@ public class PredefMacros {
         NewCommandMacro.addNewCommand("L", "\\mathrm{\\polishlcross L}", 0);
         NewCommandMacro.addNewCommand("l", "\\mathrm{\\polishlcross l}", 0);
         NewCommandMacro.addNewCommand("Join", "\\mathop{\\rlap{\\ltimes}\\rtimes}", 0);
+        NewCommandMacro.addNewCommand("longrightleftharpoons", "\\mathrel{\\overset{\\relbar\\joinrel\\rightharpoonup}{\\leftharpoondown\\joinrel\\relbar}}", 0);
+        NewCommandMacro.addNewCommand("longleftrightharpoons", "\\mathrel{\\overset{\\leftharpoonup\\joinrel\\relbar}{\\relbar\\joinrel\\rightharpoondown}}", 0);
     }
 
     public static final Atom fcscore_macro(final TeXParser tp, final String[] args) throws ParseException {
@@ -490,6 +492,10 @@ public class PredefMacros {
 
     public static final Atom text_macro(final TeXParser tp, final String[] args) throws ParseException {
         return new RomanAtom(new TeXFormula(tp, args[1], "mathnormal", false, false).root);
+    }
+
+    public static final Atom ce_macro(final TeXParser tp, final String[] args) throws ParseException {
+        return new TeXFormula(tp, ChemFormulaConverter.convert(args[1]), false).root;
     }
 
     public static final Atom underscore_macro(final TeXParser tp, final String[] args) throws ParseException {
